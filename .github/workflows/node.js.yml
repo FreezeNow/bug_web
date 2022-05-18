@@ -28,3 +28,8 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
+    - run: cd dist
+    - run: git init
+    - run: git add -A
+    - run: git commit -m 'deploy'
+    - run: git push -f git@github.com:FreezeNow/bug_web.git master:gh-pages
