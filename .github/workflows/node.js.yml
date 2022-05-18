@@ -36,7 +36,7 @@ jobs:
         # Git domain (default github.com)
         domain: github.com
         # GitHub repository where assets will be deployed (default )
-        repo: $GITHUB_REPOSITORY
+        repo: ${{ GITHUB_REPOSITORY }}
         # Git branch where assets will be deployed
         target_branch: gh-pages
         # Create incremental commit instead of doing push force
