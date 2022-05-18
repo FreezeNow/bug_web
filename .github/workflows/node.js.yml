@@ -34,9 +34,9 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v2.6.0
       with:
         # Git domain (default github.com)
-        domain: github.com
+#         domain: github.com
         # GitHub repository where assets will be deployed (default )
-        repo: ${{ GITHUB_REPOSITORY }}
+#         repo: FreezeNow/bug_web
         # Git branch where assets will be deployed
         target_branch: gh-pages
         # Create incremental commit instead of doing push force
@@ -63,4 +63,3 @@ jobs:
         verbose: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: FreezeNow/bug_web
